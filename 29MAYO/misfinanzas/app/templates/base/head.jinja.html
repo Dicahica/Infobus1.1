@@ -1,0 +1,33 @@
+<head>
+    <title>Gastos Personales</title>
+
+    {% include 'base/meta.jinja.html' %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='dist/css/framework7.min.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='dist/css/framework7.ios.min.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='dist/css/framework7.ios.colors.min.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='dist/css/jquery-ui.min.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='dist/css/my-app.css') }}">
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='dist/css/framework7-icons.css') }}">
+  
+    
+    <style type="text/css">
+      ul.desp{
+        display: none;
+            }
+
+      ul:hover  .desp{
+        display:block !important;
+      } 
+
+      
+    </style>
+</head>
+    

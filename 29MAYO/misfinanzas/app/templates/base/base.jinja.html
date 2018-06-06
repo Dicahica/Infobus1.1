@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include 'base/head.jinja.html' %}
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<body class="view-main page color-theme-orange "  >
+  <body>
+  		  
+		  <div id="app">
+			  <!-- Additional "tabbar-labels" class -->
+			  <div class="toolbar tabbar-labels">
+			    <div class="toolbar-inner">
+			      <a href="index" class="external">
+			        <!-- Different icons for iOS and MD themes -->
+			        <i class="icon f7-icons ios-only">home_fill</i>
+			        <i class="icon material-icons md-only">home</i>
+			        <!-- Label text -->
+			  
+			      </a>
+			      <a href="search" class="external">
+			        <i class="icon f7-icons ios-only">search_strong</i>
+			        <i class="icon material-icons md-only">search</i>
+			       
+			      </a>
+			      <a href="dir" class="external">
+			        <i class="icon f7-icons ios-only">flag_fill</i>
+			        <i class="icon material-icons md-only">flag</i>
+			      </a>
+			    </div>
+			  </div>
+			  <div class="tabs">
+			   
+			
+
+		        <div class="col-33">
+			        <div class="page">
+						<div class="page-content">
+							{% block content %}
+							{% endblock %}
+						</div>
+			        </div>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		
+	</body>
+ 
+
+  {% include 'base/footer.jinja.html' %}
+
+  {% block extrascripts %}
+  {% endblock %}
+</body>
+
+</html>

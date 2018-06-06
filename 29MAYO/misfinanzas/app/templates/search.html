@@ -1,0 +1,57 @@
+{% extends 'base/base.jinja.html' %}
+
+{% block content %}
+
+
+	<div class="block">
+		<div class="title">Buscar una ruta</div>
+		<div class="searchbar-backdrop"></div>
+	<form class="searchbar">
+	  <div class="searchbar-inner">
+	    <div class="searchbar-input-wrap">
+	      <input type="search" placeholder="Search">
+	      <span class="input-clear-button"></span>
+	    </div>
+	    <span class="searchbar-disable-button">Cancel</span>
+	  </div>
+	</form>
+
+		<div class="block">
+      	<div class="list simple-list">
+		<div class="title">Resultado</div>
+		 <ul>
+      <li><a href="">Ruta 30</a>
+        <i><i>Hora: </i> 3:00</i>
+       </li>
+
+    </ul>
+
+	<div class="block">
+      	<div class="list simple-list">
+		<div class="title">Búsquedas recientes</div>
+		 <ul>
+       <li><a href="">Ruta 40</a>
+        <i><i>Hora: </i> 3:20</i>
+       </li>
+       <li><a href="">Ruta 12</a>
+        <i><i>Hora: </i> 2:55</i>
+       </li>
+       <li><a href="">Ruta 15</a>
+        <i><i>Hora: </i> No pasa por aquí</i>
+       </li>
+    </ul>
+
+
+
+	</div>	
+	</div>
+	
+
+  
+	  	
+
+
+
+
+
+{% endblock %}
